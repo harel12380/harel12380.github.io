@@ -1,3 +1,40 @@
-* {
+body{
+  overflow-x : hidden;
+}
+
+a{
   font-family: 'Roboto Slab', serif;
+  text-decoration: none;
+
+}
+
+header{
+  left: 15vh;
+  position: absolute;
+  width: 100%;
+  word-spacing: 5vw;
+  font-size: 3vh;
+}
+
+#MenuHolder{
+margin-top: -3vh;
+margin-left: -5%;
+background-color: aqua;
+position:fixed;
+height: 10%;
+width: 150%;
+/* border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px; */
+border: 5px;
+border-color: aqua;
+border: solid;
+}
+
+#theambutton{
+  width: 3vh;
+  height: 1.5vw;
+  position: absolute;
+  right: 12%;
+  margin-top: 1vh;
+  
 }
