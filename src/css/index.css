@@ -1,40 +1,32 @@
 body{
   overflow-x : hidden;
+  margin: 0;
 }
 
 a{
   font-family: 'Roboto Slab', serif;
   text-decoration: none;
+}
 
+.headerObject{
+  margin-left: 10vh;
 }
 
 header{
-  left: 15vh;
-  position: absolute;
+  top: 0;
+  height: 8vh;
   width: 100%;
-  word-spacing: 5vw;
+  display: flex;
+  align-items: center;
+  background-color: aqua;
+  width: 100%;
   font-size: 3vh;
-}
-
-#MenuHolder{
-margin-top: -3vh;
-margin-left: -5%;
-background-color: aqua;
-position:fixed;
-height: 10%;
-width: 150%;
-/* border-bottom-left-radius: 15px;
-border-bottom-right-radius: 15px; */
-border: 5px;
-border-color: aqua;
-border: solid;
 }
 
 #theambutton{
   width: 3vh;
   height: 1.5vw;
-  position: absolute;
-  right: 12%;
-  margin-top: 1vh;
-  
+  display: flex;
+  align-items: center;
 }
+
