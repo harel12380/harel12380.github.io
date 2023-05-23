@@ -8,7 +8,7 @@ a{
   text-decoration: none;
 }
 
-.headerObject{
+.HeaderObject{
   margin-left: 10vh;
 }
 
@@ -24,7 +24,7 @@ header{
   position: fixed;
 }
 
-#theambutton{
+#TheamButton{
   width: 3vh;
   height: 1.5vw;
 }
@@ -33,4 +33,9 @@ main{
   margin: 5%;
   font-size: 2vh;
   font-family: 'Roboto Slab', serif;
+}
+
+#ButtonContainer{
+  margin-left: auto;
+  margin-right: 10vh;
 }
