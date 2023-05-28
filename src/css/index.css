@@ -6,7 +6,6 @@ body{
 a{
   font-family: 'Roboto Slab', serif;
   text-decoration: none;
-  
 }
 
 .HeaderObject{
@@ -23,11 +22,12 @@ header{
   align-items: center;
   overflow: hidden;
   position: fixed;
+
 }
 
 #TheamButton{
-  width: 3vh;
-  height: 1.5vw;
+  width: 3vw;
+  height: 1.5vh;
 }
 
 main{
@@ -45,10 +45,12 @@ a{color: #666;display:inline-block; margin:0;text-transform:uppercase;}
 a:after{
   display:block;
   content: '';
-  border-bottom: solid 3px #019fb6;  
+  border-bottom: solid 0.4vh #019fb6;  
   transform: scaleX(0);  
   transition: transform 250ms ease-in-out;
 }
+
 a:hover:after { transform: scaleX(1); }
 a.HeaderObject:after{  transform-origin:  0% 50%;
 }
+
