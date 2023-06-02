@@ -17,6 +17,7 @@
   </head>
   <body>
     <header>
+      <a class="headerObject" href="#landing-section">Home</a>
       <a class="headerObject" href="#about-section">About</a>
       <a class="headerObject" href="#hobbies-section">Hobbies</a>
       <a class="headerObject" href="#skills-section">Skills</a>
@@ -74,11 +75,25 @@
         </p>
       </section>
       <section id="hobbies-section">
-        <div class="hobbie" id="rubix-cube-hobbie">1</div>
-        <div class="hobbie" id="photography-hobbie">2</div>
-        <div class="hobbie" id="typing-racing-hobbie">3</div>
-        <div class="hobbie" id="reading-hobbie">4</div>
-        <div class="hobbie" id="video-games-hobbie">5</div>
+        <button class="scroll-button left">&lt;</button>
+
+        <div id="hobbies-list">
+          <div class="hobby" id="rubix-cube-hobby">1</div>
+          <div class="hobby" id="photography-hobby">2</div>
+          <div class="hobby" id="typing-racing-hobby">3</div>
+          <div class="hobby" id="reading-hobby">4</div>
+          <div class="hobby" id="video-games-hobby">5</div>
+        </div>
+
+        <button class="scroll-button right">&gt;</button>
+
+        <div id="hobbies-navigation-container">
+          <button class="hobby-navigator active" data-index="0"></button>
+          <button class="hobby-navigator" data-index="1"></button>
+          <button class="hobby-navigator" data-index="2"></button>
+          <button class="hobby-navigator" data-index="3"></button>
+          <button class="hobby-navigator" data-index="4"></button>
+        </div>
       </section>
       <section id="skills-section">
         <div class="skill" id="languages">
@@ -94,9 +109,7 @@
           <div>Typescript</div>
         </div>
         <div class="skill" id="networking">
-          security
-          socket programming
-          protocols
+          security socket programming protocols
         </div>
         <div class="skill" id="programming-practices">
           <div>git</div>
@@ -106,21 +119,16 @@
           <div>KISS</div>
           <div>Effective and quick typing</div>
         </div>
-        <div class="skill" id="interfaces">
-          WinApi
-          .NET
-        </div>
-        <div class="skill" id="operating-systems">
-          Windows
-          Ubuntu          
-        </div>
+        <div class="skill" id="interfaces">WinApi .NET</div>
+        <div class="skill" id="operating-systems">Windows Ubuntu</div>
       </section>
       <section id="projects-section">
         <div class="project" id="codeguru-xtreme-project">1</div>
         <div class="project" id="portfolio-project">2</div>
       </section>
       <section id="contact-section">
-        email: <a href="mailto:barhai.harel@gmail.com" target="_blank">Mail</a><br />
+        email: <a href="mailto:barhai.harel@gmail.com" target="_blank">Mail</a
+        ><br />
         linkedin:
         <a href="https://www.linkedin.com/in/harel-barhai/">Linkedin</a>
       </section>
