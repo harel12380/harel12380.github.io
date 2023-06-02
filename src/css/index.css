@@ -1,4 +1,38 @@
-* {
+body{
+  overflow-x : hidden;
+  margin: 0;
+}
+
+a{
+  font-family: 'Roboto Slab', serif;
+  text-decoration: none;
+}
+
+.HeaderObject{
+  margin-left: 10vh;
+}
+
+header{
+  top: 0px;
+  height: 8vh;
+  width: 100%;
+  font-size: 3vh;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+
+}
+
+#TheamButton{
+  width: 3vw;
+  height: 1.5vh;
+}
+
+main{
+  margin: 5%;
+  font-size: 2vh;
   font-family: 'Roboto Slab', serif;
   z-index: 0;
 }
@@ -6,3 +40,22 @@
 main {
   background:-moz-element('#fibonacciCanvas');
 }
+
+#ButtonContainer{
+  margin-left: auto;
+  margin-right: 10vh;
+}
+
+a{color: #666;display:inline-block; margin:0;text-transform:uppercase;}
+a:after{
+  display:block;
+  content: '';
+  border-bottom: solid 0.4vh #019fb6;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+a:hover:after { transform: scaleX(1); }
+a.HeaderObject:after{  transform-origin:  0% 50%;
+}
+
