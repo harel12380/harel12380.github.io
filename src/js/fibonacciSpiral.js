@@ -2,20 +2,17 @@
 var fibonacciCanvas = document.getElementById('fibonacciCanvas');
 var context = fibonacciCanvas.getContext('2d');
 
-var landingSection = document.getElementById('landing-section');
+// fibonacciCanvas.style.scale = 1;
 
-fibonacciCanvas.addEventListener('wheel', (event) => {
-  if (event.ctrlKey) {
-    event.preventDefault();
-  }
-});
+// setInterval(function () {
+//   fibonacciCanvas.style.scale *= 0.99;
+// }, 100)
 
 function updateCanvasSize() {
-  fibonacciCanvas.width = landingSection.offsetWidth;//window.innerWidth;
-  fibonacciCanvas.height = landingSection.offsetHeight//window.innerHeight;
+  fibonacciCanvas.width = window.innerWidth;
+  fibonacciCanvas.height = window.innerHeight;
   x = fibonacciCanvas.width / 2;
   y = fibonacciCanvas.height / 2;
-  restartFibonacci();
 }
 
 window.addEventListener('resize', updateCanvasSize);
@@ -24,13 +21,13 @@ window.addEventListener('fullscreenchange', updateCanvasSize);
 window.addEventListener('fullscreenerror', updateCanvasSize);
 
 var scaler = 5;
-var fibSequence = [1, 1];
+var fibSequence;
 var x;
 var y;
-var horizontalRight = true;
-var verticalUp = true;
-var toggleVertical = true;
-var startAngle = 90;
+var horizontalRight;
+var verticalUp;
+var toggleVertical;
+var startAngle;
 var animationRequestId;
 var animationSpeed = 200; // Delay in milliseconds between each Fibonacci spiral drawing
 
@@ -89,7 +86,7 @@ function drawFibonacci() {
   var endAngle = startAngle + 90;
 
   context.beginPath();
-  context.strokeStyle = '#000000';
+  context.strokeStyle = '#fff';
   context.arc(
     xToDraw,
     yToDraw,
@@ -130,10 +127,16 @@ function drawFibonacci() {
 
 function restartFibonacci() {
   fibSequence = [1, 1];
+  horizontalRight = true;
+  verticalUp = true;
+  toggleVertical = true;
+  startAngle = 90;
   clearTimeout(animationRequestId);
   animationRequestId = setTimeout(function () {
     drawFibonacci();
   }, animationSpeed);
+
+  updateCanvasSize();
 }
 
-updateCanvasSize();
+restartFibonacci();

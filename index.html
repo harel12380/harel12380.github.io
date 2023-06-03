@@ -7,10 +7,11 @@
     <script defer src="src/js/index.js"></script>
 
     <!-- FIBONACCI -->
-    <!-- <script defer src="src/js/fibonacciSpiral.js"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="src/css/fibonacciStyle.css" />
+    <script defer src="src/js/fibonacciSpiral.js"></script> -->
 
     <!-- Hobbies -->
-    <link rel="stylesheet" type="text/css" href="src/css/hobbies.css"/>
+    <link rel="stylesheet" type="text/css" href="src/css/hobbies.css" />
     <script defer src="src/js/hobbies.js"></script>
 
     <!-- ICON -->
@@ -22,7 +23,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap"
       rel="stylesheet" />
-    </head>
+  </head>
   <body>
     <header>
       <a class="HeaderObject" draggable="false" href="#about-section">About</a>
@@ -57,7 +58,9 @@
           for knowledge, I would be honored to be a part of your team.
         </p>
         <img src="src/images/favorite.ico" />
+        <!-- <canvas id="fibonacciCanvas"></canvas> -->
       </section>
+
       <section id="about-section">
         <h1>About Me</h1>
         <p>
@@ -97,7 +100,9 @@
       </section>
 
       <section id="hobbies-section">
-        <button class="arrow left disabled" onclick="scrollList('left')">&lt;</button>
+        <button class="arrow left disabled" onclick="scrollList('left')">
+          &lt;
+        </button>
         <div id="hobbies-list">
           <div class="hobby" id="rubix-cube-hobby">1</div>
           <div class="hobby" id="photography-hobby">2</div>
@@ -106,9 +111,11 @@
           <div class="hobby" id="video-games-hobby">5</div>
         </div>
         <button class="arrow right" onclick="scrollList('right')">&gt;</button>
-        
+
         <div id="hobbies-navigation-container">
-          <button class="hobby-navigator active" onclick="scrollToIndex(0)"></button>
+          <button
+            class="hobby-navigator active"
+            onclick="scrollToIndex(0)"></button>
           <button class="hobby-navigator" onclick="scrollToIndex(1)"></button>
           <button class="hobby-navigator" onclick="scrollToIndex(2)"></button>
           <button class="hobby-navigator" onclick="scrollToIndex(3)"></button>

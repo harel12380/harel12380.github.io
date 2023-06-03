@@ -7,6 +7,13 @@ const rightArrow = document.querySelector('.arrow.right');
 var currentIndex = 0;
 scrollToIndex(currentIndex);
 
+list.addEventListener('wheel', function (event) {
+  if (event.shiftKey) {
+    event.preventDefault(); // Prevent default Shift+scroll behavior
+    return;
+  }
+});
+
 function scrollList(direction) {
   const itemWidth = items[0].offsetWidth;
   const containerWidth = list.offsetWidth;
@@ -18,7 +25,7 @@ function scrollList(direction) {
     currentIndex = Math.min(currentIndex + 1, items.length - 1);
   }
 
-  list.scrollTo({behavior: "smooth", left: currentIndex * itemWidth});
+  list.scrollTo({ behavior: 'smooth', left: currentIndex * itemWidth });
 
   updateNavigation();
 }
@@ -27,7 +34,7 @@ function scrollToIndex(index) {
   currentIndex = index;
   const itemWidth = items[0].offsetWidth;
 
-  list.scrollTo({behavior: "smooth", left: currentIndex * itemWidth});
+  list.scrollTo({ behavior: 'smooth', left: currentIndex * itemWidth });
 
   updateNavigation();
 }

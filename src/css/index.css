@@ -12,15 +12,6 @@ body{
   margin-top: 8vh;
 }
 
-a{
-  font-family: 'Roboto Slab', serif;
-  text-decoration: none;
-}
-
-.HeaderObject{
-  margin-left: 10vh;
-}
-
 header{
   top: 0px;
   height: 8vh;
@@ -33,19 +24,25 @@ header{
   position: fixed;
 }
 
-#TheamButton{
-  width: 3vw;
-  height: 1.5vh;
-}
-
 main{
   font-family: 'Roboto Slab', serif;
   z-index: 0;
   scroll-behavior: smooth;
 }
 
-main {
-  background:-moz-element('#fibonacciCanvas');
+a{
+  font-family: 'Roboto Slab', serif;
+  text-decoration: none;
+}
+
+.HeaderObject{
+  margin-left: 10vh;
+}
+
+
+#TheamButton{
+  width: 3vw;
+  height: 1.5vh;
 }
 
 #ButtonContainer{
@@ -75,7 +72,7 @@ main {
 
 section {
   width: 100%;
-  height: 92%;
+  height: 100%;
   margin-top: 8vh;
   display: flex;
   align-items: center;
@@ -83,26 +80,11 @@ section {
   gap: 50px;
   scroll-snap-align: start;
   z-index: 0;
-  overflow-y: hidden;
+  overflow-y: visible;
+  position: relative;
 }
 
 /* Hobbies */
 
 
 /*= End of Hobbies */
-
-/* Fibonacci */
-
-#fibonacciCanvas {
-  display: block;
-  background-color: transparent;
-  border: 1px solid #ccc;
-  color: #999999;
-  position: absolute;
-  top: 50%; /* Position from the vertical center */
-  left: 50%; /* Position from the horizontal center */
-  transform: translate(-50%, -50%); /* Adjust the position to center */
-  z-index: -100;
-}
-
-/* End of Fibonacci */

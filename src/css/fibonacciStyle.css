@@ -1,11 +1,13 @@
-#fibonacciCanvas {
-  display: block;
-  background-color: transparent;
-  border: 1px solid #ccc;
-  color: #999999;
+canvas {
   position: absolute;
+  /* width: 100%;
+  height: 108%; */
   top: 50%; /* Position from the vertical center */
   left: 50%; /* Position from the horizontal center */
   transform: translate(-50%, -50%); /* Adjust the position to center */
-  z-index: -100;
+  z-index: -999;
+
+  margin: 0;
+  overflow: hidden;
+  display: block;
 }
