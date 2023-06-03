@@ -1,6 +1,15 @@
+
+* {
+  font-family: 'Roboto Slab', serif;
+  margin: 0;
+  color-scheme: dark;
+}
+
 body{
   overflow-x : hidden;
   margin: 0;
+  height: 92vh;
+  margin-top: 8vh;
 }
 
 a{
@@ -17,12 +26,11 @@ header{
   height: 8vh;
   width: 100%;
   font-size: 3vh;
-  background-color: aqua;
+  background-color: transparent;
   display: flex;
   align-items: center;
   overflow: hidden;
   position: fixed;
-
 }
 
 #TheamButton{
@@ -31,10 +39,9 @@ header{
 }
 
 main{
-  margin: 5%;
-  font-size: 2vh;
   font-family: 'Roboto Slab', serif;
   z-index: 0;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -59,104 +66,43 @@ a:hover:after { transform: scaleX(1); }
 a.HeaderObject:after{  transform-origin:  0% 50%;
 }
 
-* {
-  font-family: 'Roboto Slab', serif;
-  margin: 0;
-  color-scheme: dark !important;
-}
-
 main {
   width: 100%;
-  height: 100vh;
+  height: 92vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
 
 section {
   width: 100%;
-  height: 100vh;
+  height: 92%;
+  margin-top: 8vh;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 50px;
   scroll-snap-align: start;
+  z-index: 0;
+  overflow-y: hidden;
 }
 
 /* Hobbies */
 
-#hobbies-section {
-  position: relative;
-}
 
-#hobbies-section::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, and Opera */
-}
+/*= End of Hobbies */
 
-#hobbies-list {
-  overflow-x: scroll;
-  scrollbar-width: none; /* Firefox */
-  white-space: nowrap;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-}
+/* Fibonacci */
 
-
-.hobby {
-  flex: 0 0 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  scroll-snap-align: center;
-  scroll-margin: 0 1px 0 1px;
-}
-
-.scroll-button {
+#fibonacciCanvas {
+  display: block;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: #999999;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
-  background-color: gray;
-  color: white;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-size: 20px;
+  top: 50%; /* Position from the vertical center */
+  left: 50%; /* Position from the horizontal center */
+  transform: translate(-50%, -50%); /* Adjust the position to center */
+  z-index: -100;
 }
 
-.left {
-  left: 10px;
-}
-
-.right {
-  right: 10px;
-}
-
-#hobbies-navigation-container {
-  position: absolute;
-  bottom: 10px;
-  transform: translateY(-50%);
-}
-
-.hobby-navigator {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: gray;
-  border: none;
-  outline: none;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.hobby-navigator.active {
-  width: 12px;
-  height: 12px;
-  background-color: blue;
-}
+/* End of Fibonacci */

@@ -7,8 +7,11 @@
     <script defer src="src/js/index.js"></script>
 
     <!-- FIBONACCI -->
-    <link rel="stylesheet" type="text/css" href="src/css/fibonacciStyle.css" />
-    <script defer src="src/js/fibonacciSpiral.js"></script>
+    <!-- <script defer src="src/js/fibonacciSpiral.js"></script> -->
+
+    <!-- Hobbies -->
+    <link rel="stylesheet" type="text/css" href="src/css/hobbies.css"/>
+    <script defer src="src/js/hobbies.js"></script>
 
     <!-- ICON -->
     <link rel="icon" type="image/x-icon" href="src/images/favorite.ico" />
@@ -19,17 +22,28 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap"
       rel="stylesheet" />
-  </head>
+    </head>
   <body>
-
     <header>
-      
       <a class="HeaderObject" draggable="false" href="#about-section">About</a>
-      <a class="HeaderObject" draggable="false" href="#hobbies-section">Hobbies</a>
-      <a class="HeaderObject" draggable="false" href="#skills-section">Skills</a>
-      <a class="HeaderObject" draggable="false" href="#projects-section">Projects</a>
-      <a class="HeaderObject" draggable="false" href="#contact-section">Contact</a>
-      <div id="ButtonContainer"><button class="HeaderObject" name="ThemeToggle" id="TheamButton"></button></div>
+      <a class="HeaderObject" draggable="false" href="#hobbies-section"
+        >Hobbies</a
+      >
+      <a class="HeaderObject" draggable="false" href="#skills-section"
+        >Skills</a
+      >
+      <a class="HeaderObject" draggable="false" href="#projects-section"
+        >Projects</a
+      >
+      <a class="HeaderObject" draggable="false" href="#contact-section"
+        >Contact</a
+      >
+      <div id="ButtonContainer">
+        <button
+          class="HeaderObject"
+          name="ThemeToggle"
+          id="TheamButton"></button>
+      </div>
     </header>
 
     <main>
@@ -81,9 +95,9 @@
           Harel Barhai
         </p>
       </section>
-      <section id="hobbies-section">
-        <button class="scroll-button left">&lt;</button>
 
+      <section id="hobbies-section">
+        <button class="arrow left disabled" onclick="scrollList('left')">&lt;</button>
         <div id="hobbies-list">
           <div class="hobby" id="rubix-cube-hobby">1</div>
           <div class="hobby" id="photography-hobby">2</div>
@@ -91,17 +105,17 @@
           <div class="hobby" id="reading-hobby">4</div>
           <div class="hobby" id="video-games-hobby">5</div>
         </div>
-
-        <button class="scroll-button right">&gt;</button>
-
+        <button class="arrow right" onclick="scrollList('right')">&gt;</button>
+        
         <div id="hobbies-navigation-container">
-          <button class="hobby-navigator active" data-index="0"></button>
-          <button class="hobby-navigator" data-index="1"></button>
-          <button class="hobby-navigator" data-index="2"></button>
-          <button class="hobby-navigator" data-index="3"></button>
-          <button class="hobby-navigator" data-index="4"></button>
+          <button class="hobby-navigator active" onclick="scrollToIndex(0)"></button>
+          <button class="hobby-navigator" onclick="scrollToIndex(1)"></button>
+          <button class="hobby-navigator" onclick="scrollToIndex(2)"></button>
+          <button class="hobby-navigator" onclick="scrollToIndex(3)"></button>
+          <button class="hobby-navigator" onclick="scrollToIndex(4)"></button>
         </div>
       </section>
+
       <section id="skills-section">
         <div class="skill" id="languages">
           <div>C</div>
@@ -129,10 +143,12 @@
         <div class="skill" id="interfaces">WinApi .NET</div>
         <div class="skill" id="operating-systems">Windows Ubuntu</div>
       </section>
-      <section id="projects-section">
-        <div class="project" id="codeguru-xtreme-project">1</div>
-        <div class="project" id="portfolio-project">2</div>
+
+      <section id="portfolio-section">
+        <div class="portfolio" id="codeguru-xtreme-portfolio">1</div>
+        <div class="portfolio" id="portfolio-portfolio">2</div>
       </section>
+
       <section id="contact-section">
         email: <a href="mailto:barhai.harel@gmail.com" target="_blank">Mail</a
         ><br />
