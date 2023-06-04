@@ -2,7 +2,6 @@
 * {
   font-family: 'Roboto Slab', serif;
   margin: 0;
-  color-scheme: dark;
 }
 
 body{
@@ -43,15 +42,18 @@ a{
 #ThemeButton{
   width: fit-content;
   height: fit-content;
-  background-color: white;
-  color: white;
+  padding: 0; /* Add this line to remove padding */
+  border: none;
+  background-color: transparent;
 }
+
 
 #ButtonContainer{
   margin-left: auto;
   margin-right: 10vh;
-  background-color: white;
-  color: white;
+  border: none;
+  background-color: transparent;
+  border: none;
 }
 
 a{color: #666;display:inline-block; margin:0;text-transform:uppercase;}
