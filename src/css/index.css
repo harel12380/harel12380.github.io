@@ -40,14 +40,18 @@ a{
 }
 
 
-#TheamButton{
-  width: 3vw;
-  height: 1.5vh;
+#ThemeButton{
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  color: white;
 }
 
 #ButtonContainer{
   margin-left: auto;
   margin-right: 10vh;
+  background-color: white;
+  color: white;
 }
 
 a{color: #666;display:inline-block; margin:0;text-transform:uppercase;}
