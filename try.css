@@ -1,0 +1,47 @@
+.container {
+  position: relative;
+}
+
+label {
+  position: absolute;
+  inset: 0;
+  top: 10%;
+  left: 10%;
+  width: 100px;
+  aspect-ratio: 1;
+  background: rgb(0, 0, 0);
+  box-shadow: 0 0 0 800vmax rgba(0, 0, 0, 1);
+  clip-path: circle(50%);
+  transition: all 1s;
+  z-index: 0;
+}
+
+input[type="checkbox"]:checked + label {
+  clip-path: circle(6000%);
+  border-radius: 50%;
+  background: #f0f0f0;
+}
+
+input[type="checkbox"] {
+  visibility: hidden;
+  position: absolute;
+  overflow: hidden;
+  top: 10%;
+  left: 10%;
+}
+
+p {
+  transition: 3s;
+  color: black;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  top: 50%;
+}
+
+p.covered {
+  color: rgb(255, 255, 255);
+}
+
+
+
