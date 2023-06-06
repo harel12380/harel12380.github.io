@@ -23,6 +23,7 @@ header{
   align-items: center;
   position: fixed;
   background-color: #999999;
+  z-index: 1;
 }
 
 main {
@@ -99,15 +100,13 @@ section {
   overflow-y: visible;
 }
 
-.container {
-  position: relative;
-}
-
 label {
-  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
   inset: 0;
-  margin-right: 10vh;
-  width: 100px;
   aspect-ratio: 1;
   background: rgb(52,53,65);
   box-shadow: 0 0 0 800vmax rgb(52,53,65);
@@ -120,6 +119,11 @@ h1{
   margin-left: 10px;
 }
 
+input + label {
+  transition: 0;
+  border-radius: 50%;
+}
+
 input[type="checkbox"]:checked + label {
   clip-path: circle(6000%);
   border-radius: 50%;
@@ -128,10 +132,8 @@ input[type="checkbox"]:checked + label {
 
 input[type="checkbox"] {
   visibility: hidden;
-  position: absolute;
   overflow: hidden;
-  top: 10%;
-  left: 10%;
+  position: absolute;
 }
 
 p,
@@ -140,12 +142,14 @@ a,
 .hobby,
 .skill,
 h3,
+header,
 .portfolio {
   transition: 3s;
   color: black;
   z-index: 1;
-  position: relative;
 }
+
+
 
 .covered,
 p.covered,
@@ -156,4 +160,8 @@ a.covered,
 h3.covered,
 .portfolio.covered {
 color: rgb(255, 255, 255);
+}
+
+header.covered {
+  background-color: aqua;
 }

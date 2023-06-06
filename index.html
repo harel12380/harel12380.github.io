@@ -1,171 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- GENERAL -->
-    <title>Harel12380</title>
-    <link rel="stylesheet" type="text/css" href="src/css/index.css" />
-    <script defer src="src/js/index.js"></script>
 
-    <!-- FIBONACCI -->
-    <!-- <link rel="stylesheet" type="text/css" href="src/css/fibonacciStyle.css" />
+<head>
+  <!-- GENERAL -->
+  <title>Harel12380</title>
+  <link rel="stylesheet" type="text/css" href="src/css/index.css" />
+  <script defer src="src/js/index.js"></script>
+
+  <!-- FIBONACCI -->
+  <!-- <link rel="stylesheet" type="text/css" href="src/css/fibonacciStyle.css" />
     <script defer src="src/js/fibonacciSpiral.js"></script> -->
 
-    <!-- Hobbies -->
-    <link rel="stylesheet" type="text/css" href="src/css/hobbies.css" />
-    <script defer src="src/js/hobbies.js"></script>
+  <!-- Hobbies -->
+  <link rel="stylesheet" type="text/css" href="src/css/hobbies.css" />
+  <script defer src="src/js/hobbies.js"></script>
 
-    <!-- ICON -->
-    <link rel="icon" type="image/x-icon" href="src/images/favorite.ico" />
+  <!-- ICON -->
+  <link rel="icon" type="image/x-icon" href="src/images/favorite.ico" />
 
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet"/>
-  </head>
-  <body>
-  <div class="container">
-  <div class="box">
-      <div>
-        <input id="hidden-checkbox" type="checkbox"></input>
-        <label for="hidden-checkbox"></label>
-    <header>
-      <a class="HeaderObject" draggable="false" href="#about-section">About</a>
-      <a class="HeaderObject" draggable="false" href="#hobbies-section"
-        >Hobbies</a
-      >
-      <a class="HeaderObject" draggable="false" href="#skills-section"
-        >Skills</a
-      >
-      <a class="HeaderObject" draggable="false" href="#portfolio-section"
-        >Projects</a
-      >
-      <a class="HeaderObject" draggable="false" href="#contact-section"
-        >Contact</a
-      >
-      <div id="ButtonContainer" class="HeaderObject">
-        <button onclick="toggleAnimation()" id="themeButton">
-          <img id="myImage" src="light.png" />
-        </button>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <a class="HeaderObject" draggable="false" href="#about-section">About</a>
+    <a class="HeaderObject" draggable="false" href="#hobbies-section">Hobbies</a>
+    <a class="HeaderObject" draggable="false" href="#skills-section">Skills</a>
+    <a class="HeaderObject" draggable="false" href="#portfolio-section">Projects</a>
+    <a class="HeaderObject" draggable="false" href="#contact-section">Contact</a>
+    <div id="ButtonContainer" class="HeaderObject">
+      <div onclick="toggleCheckbox()">
+        <input id="hidden-checkbox" type="checkbox" id="themeButton"> </input>
+        <label for="hidden-checkbox">
+          <img id="myImage" src="assets/light.png" />
+        </label>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section id="landing-section">
-        <h1>Harel Barhai</h1>
-        <p>
-          Welcome.<br/>
-          My name is Harel and I am a 16 years old 11th grade student with a
-          strong interest in low-level development and research.<br />
-          If you are seeking a passionate and driven individual with a hunger
-          for knowledge, I would be honored to be a part of your team.
-        </p>
-        <img src="src/images/favorite.ico" />
-        <!-- <canvas id="fibonacciCanvas"></canvas> -->
-      </section>
+  <main>
+    <section id="landing-section">
+      <h1>Harel Barhai</h1>
+      <p>
+        Welcome.<br />
+        My name is Harel and I am a 16 years old 11th grade student with a
+        strong interest in low-level development and research.<br />
+        If you are seeking a passionate and driven individual with a hunger
+        for knowledge, I would be honored to be a part of your team.
+      </p>
+      <img src="src/images/favorite.ico" />
+      <!-- <canvas id="fibonacciCanvas"></canvas> -->
+    </section>
 
-      <section id="about-section">
-        <h1>About Me</h1>
-        <p>
-          Welcome to my portfolio website!<br />
-          I'm passionate about understanding how things work and diving deep
-          into the realms of low-level development, research, and information
-          security.<br />
-          Let me share a bit about myself and my journey so far. Since I can
-          remember, I've been captivated by the world of computers. Starting in
-          4th grade, I began coding and exploring the vast possibilities of
-          programming.<br />
-          My interest in these areas truly took off when I joined the Startech
-          and Magshimim programs.<br />
-          When it comes to programming, there are two languages that hold a
-          special place in my heart: assembly and C++. Working with memory,
-          binary, and intricate low-level concepts ignites my curiosity and
-          fuels my passion for understanding the inner workings of systems.
-          While I don't have formal work experience just yet, I've had the
-          privilege of participating in competitive programming events. One such
-          event is Codeguru Xtreme, where I had the honor of leading my group,
-          Cookies_Army, to a remarkable achievement. In Codeguru Xtreme 17, we
-          secured the 11th place, and in Codeguru Xtreme 18, we emerged
-          victorious, clinching the first place! Beyond competitions, I'm
-          constantly engaged in personal projects and self-learning. With each
-          endeavor, I strive to sharpen my skills and expand my knowledge in the
-          world of low-level development and information security. Looking
-          ahead, my aspirations include joining a team where I can continue
-          learning while making a meaningful contribution. My ultimate goal is
-          to serve as a low-level developer in the military after completing my
-          studies. I believe that continuous growth and pushing the boundaries
-          are key to making a real impact in these fields. Thank you for taking
-          the time to visit my portfolio website. If you're interested in
-          collaborating or have any inquiries, I would love to hear from you.
-          Let's embark on an exciting journey together!<br />
-          Harel Barhai
-        </p>
-      </section>
+    <section id="about-section">
+      <h1>About Me</h1>
+      <p>
+        Welcome to my portfolio website!<br />
+        I'm passionate about understanding how things work and diving deep
+        into the realms of low-level development, research, and information
+        security.<br />
+        Let me share a bit about myself and my journey so far. Since I can
+        remember, I've been captivated by the world of computers. Starting in
+        4th grade, I began coding and exploring the vast possibilities of
+        programming.<br />
+        My interest in these areas truly took off when I joined the Startech
+        and Magshimim programs.<br />
+        When it comes to programming, there are two languages that hold a
+        special place in my heart: assembly and C++. Working with memory,
+        binary, and intricate low-level concepts ignites my curiosity and
+        fuels my passion for understanding the inner workings of systems.
+        While I don't have formal work experience just yet, I've had the
+        privilege of participating in competitive programming events. One such
+        event is Codeguru Xtreme, where I had the honor of leading my group,
+        Cookies_Army, to a remarkable achievement. In Codeguru Xtreme 17, we
+        secured the 11th place, and in Codeguru Xtreme 18, we emerged
+        victorious, clinching the first place! Beyond competitions, I'm
+        constantly engaged in personal projects and self-learning. With each
+        endeavor, I strive to sharpen my skills and expand my knowledge in the
+        world of low-level development and information security. Looking
+        ahead, my aspirations include joining a team where I can continue
+        learning while making a meaningful contribution. My ultimate goal is
+        to serve as a low-level developer in the military after completing my
+        studies. I believe that continuous growth and pushing the boundaries
+        are key to making a real impact in these fields. Thank you for taking
+        the time to visit my portfolio website. If you're interested in
+        collaborating or have any inquiries, I would love to hear from you.
+        Let's embark on an exciting journey together!<br />
+        Harel Barhai
+      </p>
+    </section>
 
-      <section id="hobbies-section">
-        <button class="arrow-left-disabled" onclick="scrollList('left')">
-          &lt;
-        </button>
-        <div id="hobbies-list">
-          <div class="hobby" id="rubix-cube-hobby">1</div>
-          <div class="hobby" id="photography-hobby">2</div>
-          <div class="hobby" id="typing-racing-hobby">3</div>
-          <div class="hobby" id="reading-hobby">4</div>
-          <div class="hobby" id="video-games-hobby">5</div>
-        </div>
-        <button class="arrow-right" onclick="scrollList('right')">&gt;</button>
+    <section id="hobbies-section">
+      <button class="arrow-left-disabled" onclick="scrollList('left')">
+        &lt;
+      </button>
+      <div id="hobbies-list">
+        <div class="hobby" id="rubix-cube-hobby">1</div>
+        <div class="hobby" id="photography-hobby">2</div>
+        <div class="hobby" id="typing-racing-hobby">3</div>
+        <div class="hobby" id="reading-hobby">4</div>
+        <div class="hobby" id="video-games-hobby">5</div>
+      </div>
+      <button class="arrow-right" onclick="scrollList('right')">&gt;</button>
 
-        <div id="hobbies-navigation-container">
-          <button
-            class="hobby-navigator active"
-            onclick="scrollToIndex(0)"></button>
-          <button class="hobby-navigator" onclick="scrollToIndex(1)"></button>
-          <button class="hobby-navigator" onclick="scrollToIndex(2)"></button>
-          <button class="hobby-navigator" onclick="scrollToIndex(3)"></button>
-          <button class="hobby-navigator" onclick="scrollToIndex(4)"></button>
-        </div>
-      </section>
+      <div id="hobbies-navigation-container">
+        <button class="hobby-navigator active" onclick="scrollToIndex(0)"></button>
+        <button class="hobby-navigator" onclick="scrollToIndex(1)"></button>
+        <button class="hobby-navigator" onclick="scrollToIndex(2)"></button>
+        <button class="hobby-navigator" onclick="scrollToIndex(3)"></button>
+        <button class="hobby-navigator" onclick="scrollToIndex(4)"></button>
+      </div>
+    </section>
 
-      <section id="skills-section">
-        <div class="skill" id="languages">
-          <div>C</div>
-          <div>C++</div>
-          <div>Assembly</div>
-          <div>SQL</div>
-          <div>Python</div>
-          <div>Html</div>
-          <div>Css</div>
-          <div>Javascript</div>
-          <div>React Native</div>
-          <div>Typescript</div>
-        </div>
-        <div class="skill" id="networking">
-          security socket programming protocols
-        </div>
-        <div class="skill" id="programming-practices">
-          <div>git</div>
-          <div>regex</div>
-          <div>SOLID</div>
-          <div>DRY</div>
-          <div>KISS</div>
-          <div>Effective and quick typing</div>
-        </div>
-        <div class="skill" id="interfaces">WinApi .NET</div>
-        <div class="skill" id="operating-systems">Windows Ubuntu</div>
-      </section>
+    <section id="skills-section">
+      <div class="skill" id="languages">
+        <div>C</div>
+        <div>C++</div>
+        <div>Assembly</div>
+        <div>SQL</div>
+        <div>Python</div>
+        <div>Html</div>
+        <div>Css</div>
+        <div>Javascript</div>
+        <div>React Native</div>
+        <div>Typescript</div>
+      </div>
+      <div class="skill" id="networking">
+        security socket programming protocols
+      </div>
+      <div class="skill" id="programming-practices">
+        <div>git</div>
+        <div>regex</div>
+        <div>SOLID</div>
+        <div>DRY</div>
+        <div>KISS</div>
+        <div>Effective and quick typing</div>
+      </div>
+      <div class="skill" id="interfaces">WinApi .NET</div>
+      <div class="skill" id="operating-systems">Windows Ubuntu</div>
+    </section>
 
-      <section id="portfolio-section">
-        <div class="portfolio" id="codeguru-xtreme-portfolio">1</div>
-        <div class="portfolio" id="portfolio-portfolio">2</div>
-      </section>
+    <section id="portfolio-section">
+      <div class="portfolio" id="codeguru-xtreme-portfolio">1</div>
+      <div class="portfolio" id="portfolio-portfolio">2</div>
+    </section>
 
-      <section id="contact-section">
-        <h3>email:</h3><a href="mailto:barhai.harel@gmail.com" target="_blank">Mail</a
-        ><br />
-        <h3>linkedin:</h3>
-        <a href="https://www.linkedin.com/in/harel-barhai/">Linkedin</a>
-      </section>
-    </main>
-  </div>
-</div>
+    <section id="contact-section">
+      <h3>email:</h3><a href="mailto:barhai.harel@gmail.com" target="_blank">Mail</a><br />
+      <h3>linkedin:</h3>
+      <a href="https://www.linkedin.com/in/harel-barhai/">Linkedin</a>
+    </section>
+  </main>
 </body>
+
 </html>
