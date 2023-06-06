@@ -3,8 +3,10 @@ var image = document.getElementById('myImage');
 
 const checkbox = document.getElementById('hidden-checkbox');
 
+toggleAnimation(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+
 function toggleAnimation(darkThemeToggle) {
-  image.src = darkThemeToggle ? 'assets/light-mode.gif' : 'assets/dark-mode.gif';
+  image.src = darkThemeToggle ? 'src/assets/theme/light-mode.gif' : 'src/assets/theme/dark-mode.gif';
 }
 
 function toggleCheckbox() {
