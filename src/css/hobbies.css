@@ -10,7 +10,7 @@
 #hobbies-list {
   overflow-x: scroll;
   scrollbar-width: none; /* Firefox */
-  white-space: nowrap;
+  light-space: nowrap;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -38,7 +38,7 @@
   width: 30px;
   height: 30px;
   background-color: gray;
-  color: white;
+  color: light;
   border: none;
   outline: none;
   cursor: pointer;

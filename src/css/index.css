@@ -1,7 +1,6 @@
 *{
   font-family: 'Roboto Slab', serif;
   margin: 0;
-  color-scheme: dark;
 }
 
 body{
@@ -9,6 +8,10 @@ body{
   margin: 0;
   height: 92vh;
   margin-top: 8vh;
+}
+
+img, .arrow-right{
+  z-index: 1;
 }
 
 header{
@@ -19,6 +22,7 @@ header{
   display: flex;
   align-items: center;
   position: fixed;
+  background-color: #666;
 }
 
 main{
@@ -40,11 +44,18 @@ a{
 #ThemeButton{
   width: fit-content;
   height: fit-content;
+  padding: 0; /* Add this line to remove padding */
+  border: none;
+  background-color: transparent;
 }
+
 
 #ButtonContainer{
   margin-left: auto;
   margin-right: 10vh;
+  border: none;
+  background-color: transparent;
+  border: none;
 }
 
 a{color: #666;display:inline-block; margin:0;text-transform:uppercase;}
@@ -78,10 +89,70 @@ section {
   scroll-snap-align: start;
   z-index: 0;
   overflow-y: visible;
+}
+
+.container {
   position: relative;
 }
 
-/* Hobbies */
+label {
+  position: absolute;
+  inset: 0;
+  margin-right: 10vh;
+  width: 100px;
+  aspect-ratio: 1;
+  background: rgb(0, 0, 0);
+  box-shadow: 0 0 0 800vmax rgba(0, 0, 0, 1);
+  clip-path: circle(50%);
+  transition: all 1s;
+  z-index: 0;
+}
 
+input[type="checkbox"]:checked + label {
+  clip-path: circle(6000%);
+  border-radius: 50%;
+  background: #f0f0f0;
+}
 
-/*= End of Hobbies */
+input[type="checkbox"] {
+  visibility: hidden;
+  position: absolute;
+  overflow: hidden;
+  top: 10%;
+  left: 10%;
+}
+
+p, h1, a, .hobby, .skill, h3, .portfolio{
+  transition: 3s;
+  color: black;
+  z-index: 1;
+  position: relative;
+}
+
+p.covered {
+  color: rgb(255, 255, 255);
+}
+
+h1.covered {
+  color: rgb(255, 255, 255);
+} 
+
+a.covered {
+  color: rgb(255, 255, 255);
+} 
+
+.hobby.covered {
+  color: rgb(255, 255, 255);
+} 
+
+.skill.covered {
+  color: rgb(255, 255, 255);
+} 
+
+h3.covered {
+  color: rgb(255, 255, 255);
+} 
+
+.portfolio.covered {
+  color: rgb(255, 255, 255);
+} 
