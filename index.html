@@ -20,11 +20,14 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap"
-      rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet"/>
   </head>
   <body>
+  <div class="container">
+  <div class="box">
+      <div>
+        <input id="hidden-checkbox" type="checkbox"></input>
+        <label for="hidden-checkbox"></label>
     <header>
       <a class="HeaderObject" draggable="false" href="#about-section">About</a>
       <a class="HeaderObject" draggable="false" href="#hobbies-section"
@@ -50,7 +53,7 @@
       <section id="landing-section">
         <h1>Harel Barhai</h1>
         <p>
-          Welcome.<br />
+          Welcome.<br/>
           My name is Harel and I am a 16 years old 11th grade student with a
           strong interest in low-level development and research.<br />
           If you are seeking a passionate and driven individual with a hunger
@@ -99,7 +102,7 @@
       </section>
 
       <section id="hobbies-section">
-        <button class="arrow left disabled" onclick="scrollList('left')">
+        <button class="arrow-left-disabled" onclick="scrollList('left')">
           &lt;
         </button>
         <div id="hobbies-list">
@@ -109,7 +112,7 @@
           <div class="hobby" id="reading-hobby">4</div>
           <div class="hobby" id="video-games-hobby">5</div>
         </div>
-        <button class="arrow right" onclick="scrollList('right')">&gt;</button>
+        <button class="arrow-right" onclick="scrollList('right')">&gt;</button>
 
         <div id="hobbies-navigation-container">
           <button
@@ -156,12 +159,13 @@
       </section>
 
       <section id="contact-section">
-        email: <a href="mailto:barhai.harel@gmail.com" target="_blank">Mail</a
+        <h3>email:</h3><a href="mailto:barhai.harel@gmail.com" target="_blank">Mail</a
         ><br />
-        linkedin:
+        <h3>linkedin:</h3>
         <a href="https://www.linkedin.com/in/harel-barhai/">Linkedin</a>
       </section>
     </main>
-    <footer></footer>
-  </body>
+  </div>
+</div>
+</body>
 </html>

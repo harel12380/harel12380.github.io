@@ -1,16 +1,16 @@
 *{
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   margin: 0;
 }
 
-body{
-  overflow-x : hidden;
+body {
+  overflow-x: hidden;
   margin: 0;
   height: 92vh;
   margin-top: 8vh;
 }
 
-img, .arrow-right{
+img,.arrow-right {
   z-index: 1;
 }
 
@@ -22,35 +22,33 @@ header{
   display: flex;
   align-items: center;
   position: fixed;
-  background-color: #666;
+  background-color: #999999;
 }
 
-main{
-  font-family: 'Roboto Slab', serif;
+main {
+  font-family: "Roboto Slab", serif;
   z-index: 0;
   scroll-behavior: smooth;
 }
 
-a{
-  font-family: 'Roboto Slab', serif;
+a {
+  font-family: "Roboto Slab", serif;
   text-decoration: none;
 }
 
-.HeaderObject{
+.HeaderObject {
   margin-left: 10vh;
 }
 
-
-#ThemeButton{
+#ThemeButton {
   width: fit-content;
   height: fit-content;
-  padding: 0; /* Add this line to remove padding */
+  padding: 0;
   border: none;
   background-color: transparent;
 }
 
-
-#ButtonContainer{
+#ButtonContainer {
   margin-left: auto;
   margin-right: 10vh;
   border: none;
@@ -58,17 +56,27 @@ a{
   border: none;
 }
 
-a{color: #666;display:inline-block; margin:0;text-transform:uppercase;}
-a:after{
-  display:block;
-  content: '';
-  border-bottom: solid 0.4vh #019fb6;  
-  transform: scaleX(0);  
+a {
+  color: #666;
+  display: inline-block;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+a:after {
+  display: block;
+  content: "";
+  border-bottom: solid 0.4vh #019fb6;
+  transform: scaleX(0);
   transition: transform 250ms ease-in-out;
 }
 
-a:hover:after { transform: scaleX(1); }
-a.HeaderObject:after{  transform-origin:  0% 50%;
+a:hover:after {
+  transform: scaleX(1);
+}
+
+a.HeaderObject:after {
+  transform-origin: 0% 50%;
 }
 
 main {
@@ -101,11 +109,15 @@ label {
   margin-right: 10vh;
   width: 100px;
   aspect-ratio: 1;
-  background: rgb(0, 0, 0);
-  box-shadow: 0 0 0 800vmax rgba(0, 0, 0, 1);
+  background: rgb(52,53,65);
+  box-shadow: 0 0 0 800vmax rgb(52,53,65);
   clip-path: circle(50%);
-  transition: all 1s;
+  transition: all 2s;
   z-index: 0;
+}
+
+h1{
+  margin-left: 10px;
 }
 
 input[type="checkbox"]:checked + label {
@@ -122,37 +134,26 @@ input[type="checkbox"] {
   left: 10%;
 }
 
-p, h1, a, .hobby, .skill, h3, .portfolio{
+p,
+h1,
+a,
+.hobby,
+.skill,
+h3,
+.portfolio {
   transition: 3s;
   color: black;
   z-index: 1;
   position: relative;
 }
 
-p.covered {
-  color: rgb(255, 255, 255);
-}
-
-h1.covered {
-  color: rgb(255, 255, 255);
-} 
-
-a.covered {
-  color: rgb(255, 255, 255);
-} 
-
-.hobby.covered {
-  color: rgb(255, 255, 255);
-} 
-
-.skill.covered {
-  color: rgb(255, 255, 255);
-} 
-
-h3.covered {
-  color: rgb(255, 255, 255);
-} 
-
+.covered,
+p.covered,
+h1.covered,
+a.covered,
+.hobby.covered,
+.skill.covered,
+h3.covered,
 .portfolio.covered {
-  color: rgb(255, 255, 255);
-} 
+color: rgb(255, 255, 255);
+}
