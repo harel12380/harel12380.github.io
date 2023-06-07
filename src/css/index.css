@@ -10,10 +10,6 @@ body {
   margin-top: 8vh;
 }
 
-img,.arrow-right {
-  z-index: 1;
-}
-
 header{
   top: 0px;
   height: 8vh;
@@ -23,12 +19,10 @@ header{
   align-items: center;
   position: fixed;
   background-color: #999999;
-  z-index: 1;
 }
 
 main {
   font-family: "Roboto Slab", serif;
-  z-index: 0;
   scroll-behavior: smooth;
 }
 
@@ -96,8 +90,11 @@ section {
   justify-content: center;
   gap: 50px;
   scroll-snap-align: start;
-  z-index: 0;
   overflow-y: visible;
+}
+
+*:not(#ButtonContainer) {
+  z-index: 0;
 }
 
 label {
@@ -108,11 +105,20 @@ label {
   height: fit-content;
   inset: 0;
   aspect-ratio: 1;
-  background: rgb(52,53,65);
   box-shadow: 0 0 0 800vmax rgb(52,53,65);
   clip-path: circle(50%);
   transition: all 2s;
-  z-index: 0;
+
+}
+
+header {
+  position: absolute; 
+  z-index: 1;
+}
+
+#ButtonContainer {
+  position: relative;
+  z-index: -1;
 }
 
 h1{
@@ -127,7 +133,6 @@ input + label {
 input[type="checkbox"]:checked + label {
   clip-path: circle(6000%);
   border-radius: 50%;
-  background: #f0f0f0;
 }
 
 input[type="checkbox"] {
@@ -146,19 +151,9 @@ header,
 .portfolio {
   transition: 3s;
   color: black;
-  z-index: 1;
 }
 
-
-
-.covered,
-p.covered,
-h1.covered,
-a.covered,
-.hobby.covered,
-.skill.covered,
-h3.covered,
-.portfolio.covered {
+.covered {
 color: rgb(255, 255, 255);
 }
 
